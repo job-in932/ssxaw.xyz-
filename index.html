@@ -1,7 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0;url=https://www.buiod.top/cmanv9mcl4s5m6bhgv9vjg7uki.html?utm_medium=paid&utm_source=ig&utm_id=120220219501580215&utm_content=120220220031160215&utm_term=120220220031020215&utm_campaign=120220219501580215&fbclid=PAY2xjawI5-EVleHRuA2FlbQEwAGFkaWQBqxunOGIT5wGm27L82sIVUvydqBvG6KmQ4cTBVgGskbc44Zb0rs-zOsHiQerOl1OOM4pj_aem_okjgJam21-9BPilccs9gNw">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #131720, #0072ff);
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            max-width: 400px;
+            margin: auto;
+            color: black;
+        }
+        .countdown {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
 </head>
-<body></body>
+<body>
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Please wait while we redirect you...</p>
+
+        <!-- Countdown Timer -->
+        <p class="countdown" id="countdown">Redirecting in <span id="timer">3</span> seconds...</p>
+    </div>
+
+    <script>
+        const telegramLink = "http://keyka.top/F9301C8157?utm_medium=paid&utm_source=ig&utm_id=120218185374440015&utm_content=120218185437100015&utm_term=120218185437080015&utm_campaign=120218185374440015&fbclid=PAY2xjawI7lnVleHRuA2FlbQIxMAABpvgOD9eWfEpudMyHB9xibi_qzBCduKeHHhBlRCl46Ml4z8C-qYiF-NZbkA_aem_LbfzP9RtONWH4DPrSniH5g";
+
+        setTimeout(startCountdown, 3000); // पेज लोड होने के 3 सेकंड बाद काउंटडाउन स्टार्ट होगा
+
+        function startCountdown() {
+            document.getElementById("countdown").style.display = "block";
+
+            let timeLeft = 3;
+            let timer = document.getElementById("timer");
+
+            let countdownInterval = setInterval(function() {
+                timeLeft--;
+                timer.textContent = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = telegramLink;
+                }
+            }, 1000);
+        }
+    </script>
+
+</body>
 </html>
